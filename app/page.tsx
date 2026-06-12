@@ -70,6 +70,7 @@ const jsonLd = {
       name: "אילוז עורכי דין",
       alternateName: ["Iluz Lawyer's Office", "ILUZ LAWYERS"],
       url: siteUrl,
+      logo: `${siteUrl}/iluz-logo.png`,
       image: `${siteUrl}/hero-jerusalem-urban-renewal.png`,
       telephone: phoneDisplay,
       address: {
@@ -160,9 +161,11 @@ export default function Home() {
       <header className="sticky top-0 z-30 border-b border-white/40 bg-[#102326]/92 text-white backdrop-blur">
         <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3 px-5 py-3 md:gap-4 md:px-8 md:py-4">
           <a href="#home" className="flex items-center gap-3" aria-label="אילוז עורכי דין - דף הבית">
-            <span className="grid h-10 w-10 place-items-center rounded-lg border border-[#d7b46a]/60 bg-[#d7b46a] text-sm font-bold text-[#102326]">
-              IL
-            </span>
+            <img
+              src="/iluz-logo.png"
+              alt="Iluz Lawyer's Office"
+              className="h-[72px] w-auto object-contain md:h-[88px]"
+            />
             <span className="leading-tight">
               <span className="block text-base font-semibold">אילוז עורכי דין</span>
               <span className="block text-xs text-white/72">Iluz Lawyer&apos;s Office</span>
